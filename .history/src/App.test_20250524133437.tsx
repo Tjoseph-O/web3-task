@@ -18,6 +18,7 @@ describe('Number Guesser Game App', () => {
   test('starts game when difficulty is selected', () => {
     render(<App />);
     
+    // Select difficulty
     fireEvent.click(screen.getByText('Medium'));
     
     // Core requirement: Input interface and attempt tracking

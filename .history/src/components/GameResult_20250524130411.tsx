@@ -25,16 +25,16 @@ export const GameResult: React.FC<GameResultProps> = ({
         {isWin ? 'Congratulations!' : 'Game Over!'}
       </h2>
       
-      <p className="text-lg text-gray-700 mb-2" data-testid="secret-number">
+      <p className="text-lg text-gray-700 mb-2">
         The secret number was <strong>{secretNumber}</strong>
       </p>
       
       {isWin ? (
-        <p className="text-lg text-gray-700 mb-6" data-testid="attempts-message">
+        <p className="text-lg text-gray-700 mb-6">
           You guessed it in <strong>{attempts}</strong> attempt{attempts !== 1 ? 's' : ''}!
         </p>
       ) : (
-        <p className="text-lg text-gray-700 mb-6" data-testid="loss-message">
+        <p className="text-lg text-gray-700 mb-6">
           Better luck next time!
         </p>
       )}
