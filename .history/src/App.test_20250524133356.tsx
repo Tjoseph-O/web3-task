@@ -6,9 +6,11 @@ describe('Number Guesser Game App', () => {
   test('renders game title and difficulty selection', () => {
     render(<App />);
     
+    // Core requirement: GUI interface
     expect(screen.getByText('Number Guesser Game')).toBeInTheDocument();
     expect(screen.getByText(/I'm thinking of a number between 1 and 100/)).toBeInTheDocument();
     
+    // Optional feature: Difficulty levels
     expect(screen.getByText('Easy')).toBeInTheDocument();
     expect(screen.getByText('Medium')).toBeInTheDocument();
     expect(screen.getByText('Hard')).toBeInTheDocument();
@@ -18,6 +20,7 @@ describe('Number Guesser Game App', () => {
   test('starts game when difficulty is selected', () => {
     render(<App />);
     
+    // Select difficulty
     fireEvent.click(screen.getByText('Medium'));
     
     // Core requirement: Input interface and attempt tracking

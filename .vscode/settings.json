@@ -1,0 +1,11 @@
+{
+    "css.validate": false,
+    "tailwindCSS.includeLanguages": {
+      "typescript": "typescript",
+      "typescriptreact": "typescriptreact"
+    },
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "css.customData": [".vscode/css_custom_data.json"]
+  }
